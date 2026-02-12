@@ -1,0 +1,26 @@
+class edades:
+    @staticmethod
+    def calcularedalber(edjuan):
+        return (edjuan*2)/3
+
+    @staticmethod
+    def calcularedana(edjuan):
+        return (edjuan*4)/3
+
+    @staticmethod
+    def calcularedmama(edjuan):
+        return edades.calcularedalber(edjuan) + edades.calcularedana(edjuan) + edjuan
+
+
+def main():
+    edjuan = 9
+
+    edalber = edades.calcularedalber(edjuan)
+    edana = edades.calcularedana(edjuan)
+    edmama = edades.calcularedmama(edjuan)
+
+    print(f"Las edades son: Albert = {edalber:.0f}, Juan = {edjuan}, Ana = {edana:.0f}, Mamá = {edmama:.0f}")
+
+
+if __name__ == "__main__":
+    main()
